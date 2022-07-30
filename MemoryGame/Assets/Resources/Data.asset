@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb756361aed0d734a8373e0ea73ca846, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  levels: []
+  levels:
+  - LevelNumber: 1
+    NumOfCards: 2
+    TimeInSeconds: 30
+    CardsContents: 0000000000000000

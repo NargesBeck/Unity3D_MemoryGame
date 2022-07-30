@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     private GameScenes _currentState = GameScenes.SceneMainMenu;
 
+    public Level CurrentLevel;
+
     private void Awake()
     {
         DontDestroyOnLoad(Instance.gameObject);
@@ -32,6 +34,4 @@ public class GameManager : MonoBehaviour
         _currentState = changeTo;
         SceneManager.LoadScene((int) changeTo);
     }
-
-
 }

@@ -4,14 +4,14 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     // Singleton
-    private static GameManager instance;
+    private static GameManager s_instance;
     public static GameManager Instance
     {
         get 
         { 
-            if (instance == null)
-                instance = FindObjectOfType<GameManager>();
-            return instance;
+            if (s_instance == null)
+                s_instance = FindObjectOfType<GameManager>();
+            return s_instance;
         }
     }
 
@@ -20,16 +20,18 @@ public class GameManager : MonoBehaviour
         SceneMainMenu, SceneLevelsMenu, SceneGamePage
     }
 
-    private GameScenes currentState = GameScenes.SceneMainMenu;
+    private GameScenes _currentState = GameScenes.SceneMainMenu;
 
     private void Awake()
     {
-        DontDestroyOnLoad(Instance);
+        DontDestroyOnLoad(Instance.gameObject);
     }
 
     public void ChangeScene(GameScenes changeTo)
     {
-        currentState = changeTo;
+        _currentState = changeTo;
         SceneManager.LoadScene((int) changeTo);
     }
+
+
 }

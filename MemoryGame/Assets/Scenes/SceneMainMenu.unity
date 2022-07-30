@@ -617,6 +617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1758008459}
   - component: {fileID: 1758008458}
+  - component: {fileID: 1758008460}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -650,6 +651,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1758008460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758008457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52949e28667a6dc40b23783ab26ca698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: -1395720440862269661, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -110723464743145670, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: 5608962639592096898, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: 8565304649678176445, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: 8622953425511338246, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -3696000170818462073, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -7275121061582017739, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: 50679318131627559, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: 902321227331308860, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -1466504026711246277, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -3636169884662614105, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -5742549317079706252, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -8652476099404541004, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -4746122522525258392, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: 3836720512112161437, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
+  - {fileID: -4216859448366246017, guid: 79e6603cd19057242962bfa72f296d4b, type: 3}
 --- !u!1 &2082163027
 GameObject:
   m_ObjectHideFlags: 0

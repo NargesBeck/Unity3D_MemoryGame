@@ -1,6 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum CardStates
+{
+    ReadyToBeClicked, Flipping, DisplayTemporarily, DisplayForGood
+}
+
 public class GameManager : MonoBehaviour
 {
     // Singleton
@@ -12,6 +17,17 @@ public class GameManager : MonoBehaviour
             if (s_instance == null)
                 s_instance = FindObjectOfType<GameManager>();
             return s_instance;
+        }
+    }
+
+    private CardsContentDB _cardsContentDB;
+    public CardsContentDB CardsContentDB
+    {
+        get
+        {
+            if (_cardsContentDB == null)
+                _cardsContentDB = GetComponent<CardsContentDB>();
+            return _cardsContentDB;
         }
     }
 

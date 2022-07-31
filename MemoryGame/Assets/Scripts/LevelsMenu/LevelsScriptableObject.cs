@@ -9,10 +9,10 @@ public class LevelsScriptableObject : ScriptableObject
 }
 
 [Serializable]
-public struct Level
+public class Level
 {
     public int LevelNumber;
     public int NumOfCards;
     public int TimeInSeconds;
-    public List<int> CardsContents;
+    public List<int> CardsContents = new List<int>();
 }

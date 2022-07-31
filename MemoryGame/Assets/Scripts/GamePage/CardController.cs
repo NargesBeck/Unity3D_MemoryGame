@@ -78,7 +78,6 @@ public class CardController : MonoBehaviour, IPointerClickHandler
                 StartCoroutine(Flip(ContentSprite));
                 break;
             case CardStates.FlippingToHide:
-                //float delayStart = CurrentCardState == CardStates.FlippingToShow ? 0.5f : 0;
                 CurrentCardState = newState;
                 StartCoroutine(Flip(coverSprite, 0.5f));
                 break;

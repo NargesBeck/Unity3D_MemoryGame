@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class CardModel : MonoBehaviour
 {
     public Action<int> OnCardClick;
+    public Action OnCardsMatch;
 
     private List<CardController> clickedCards = new List<CardController> ();
 
@@ -37,7 +38,7 @@ public class CardModel : MonoBehaviour
         if (clickedCards[0].ContentSprite == clickedCards[1].ContentSprite)
         {
             // score
-
+            OnCardsMatch?.Invoke();
         }
         else
         {

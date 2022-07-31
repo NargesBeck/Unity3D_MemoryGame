@@ -1868,6 +1868,7 @@ GameObject:
   - component: {fileID: 1781792467}
   - component: {fileID: 1781792466}
   - component: {fileID: 1781792471}
+  - component: {fileID: 1781792472}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -1944,6 +1945,7 @@ MonoBehaviour:
   CardModel: {fileID: 1781792471}
   ScoreModel: {fileID: 1781792467}
   TimerModel: {fileID: 1781792466}
+  PopupController: {fileID: 0}
 --- !u!4 &1781792470
 Transform:
   m_ObjectHideFlags: 0
@@ -1970,6 +1972,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6959206cfa619d8479ea1206f2f7f6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1781792472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781792465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e47115dce6fbe04d939d8f16112d27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanvasTransform: {fileID: 0}
+  victoryPopup: {fileID: 1869586340785927731, guid: 5b21190abee2cf247825d25184fe62e9, type: 3}
+  gameOverPopup: {fileID: 4371181733664646048, guid: 657084bcce2f1904694d534ded88d12d, type: 3}
 --- !u!1001 &1824056148
 PrefabInstance:
   m_ObjectHideFlags: 0

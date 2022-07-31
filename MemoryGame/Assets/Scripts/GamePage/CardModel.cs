@@ -6,6 +6,7 @@ public class CardModel : MonoBehaviour
 {
     public Action<int> OnCardClick;
     public Action OnCardsMatch;
+    public Action<bool> OnLevelEnd;
 
     private List<CardController> clickedCards = new List<CardController> ();
 
@@ -39,6 +40,12 @@ public class CardModel : MonoBehaviour
         {
             // score
             OnCardsMatch?.Invoke();
+
+            if (CheckIfBoardIsClear())
+            {
+                if (OnLevelEnd != null)
+                    OnLevelEnd(true);
+            }
         }
         else
         {
@@ -46,5 +53,17 @@ public class CardModel : MonoBehaviour
             clickedCards[1].SetNewState(CardStates.FlippingToHide);
         }
         clickedCards.Clear();
+    }
+
+    private bool CheckIfBoardIsClear()
+    {
+        bool isClear = false;
+        for (int i = 0; i < GameManager.Instance.CurrentLevel.NumOfCards; i++)
+        {
+            isClear = Linker.Instance.CardsPoolModel.GetCardControllerByIndex(i).CurrentCardState != CardStates.Showing;
+            if (!isClear)
+                return false;
+        }
+        return isClear;
     }
 }

@@ -30,5 +30,7 @@ public class TimerModel : MonoBehaviour
             OnTimerUpdate(_secondsRemaining);
         if (_secondsRemaining > 0)
             StartCoroutine(OneSecondDelay());
+        else if (Linker.Instance.CardModel.OnLevelEnd != null)
+            Linker.Instance.CardModel.OnLevelEnd(false);
     }
 }

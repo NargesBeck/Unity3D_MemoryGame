@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class CardsContentDB : MonoBehaviour
 {
+    public Sprite spritesheet;
     [SerializeField]
     private List<Sprite> _sprites = new List<Sprite>();
 

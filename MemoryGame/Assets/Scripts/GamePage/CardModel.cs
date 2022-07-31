@@ -57,12 +57,20 @@ public class CardModel : MonoBehaviour
 
     private bool CheckIfBoardIsClear()
     {
-        bool isClear = false;
+        bool isClear = true;
         for (int i = 0; i < GameManager.Instance.CurrentLevel.NumOfCards; i++)
         {
-            isClear = Linker.Instance.CardsPoolModel.GetCardControllerByIndex(i).CurrentCardState != CardStates.Showing;
-            if (!isClear)
-                return false;
+            //isClear = Linker.Instance.CardsPoolModel.GetCardControllerByIndex(i).CurrentCardState == CardStates.Showing;
+            //if (isClear == false)
+            //    return false;
+
+            if (Linker.Instance.CardsPoolModel.GetCardControllerByIndex(i).CurrentCardState != CardStates.Showing &&
+                Linker.Instance.CardsPoolModel.GetCardControllerByIndex(i).CurrentCardState != CardStates.FlippingToShow)
+            {
+                isClear = false;
+                break;
+            }
+
         }
         return isClear;
     }

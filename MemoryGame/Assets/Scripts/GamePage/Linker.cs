@@ -19,5 +19,5 @@ public class Linker : MonoBehaviour
     public CardModel CardModel;
     public ScoreModel ScoreModel;
     public TimerModel TimerModel;
-    public PopupController PopupController;
+    public PopupModel PopupController;
 }

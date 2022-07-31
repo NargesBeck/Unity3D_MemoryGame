@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class TimerModel : MonoBehaviour
 {
+    private new bool enabled = true;
     private int _secondsRemaining;
 
     public Action<int> OnTimerUpdate;
 
     private void Start()
     {
+        Linker.Instance.CardModel.OnLevelEnd += LevelEnded;
         AssignMe();
     }
 
@@ -28,9 +30,18 @@ public class TimerModel : MonoBehaviour
         _secondsRemaining--;
         if (OnTimerUpdate != null)
             OnTimerUpdate(_secondsRemaining);
-        if (_secondsRemaining > 0)
+        if (_secondsRemaining > 0 && enabled)
             StartCoroutine(OneSecondDelay());
-        else if (Linker.Instance.CardModel.OnLevelEnd != null)
+        else if (Linker.Instance.CardModel.OnLevelEnd != null && enabled)
             Linker.Instance.CardModel.OnLevelEnd(false);
+    }
+
+    private void LevelEnded(bool playerWon)
+    {
+        if (playerWon)
+        {
+            enabled = false;
+            StopCoroutine(OneSecondDelay());
+        }
     }
 }

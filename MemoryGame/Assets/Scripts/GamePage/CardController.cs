@@ -7,12 +7,13 @@ using UnityEngine.EventSystems;
 
 public class CardController : MonoBehaviour, IPointerClickHandler
 {
-    public CardStates currentCardState = CardStates.ReadyToBeClicked;
+    public CardStates CurrentCardState = CardStates.ReadyToBeClicked;
 
     [SerializeField]
-    private Sprite coverSprite, contentSprite;
+    private Sprite coverSprite;
+    public Sprite ContentSprite  {get; set;}
 
-    private int Index;
+    public int Index { get; set; }
 
     #region buffering Transform And Renderers
     private Transform _myTransform;
@@ -38,25 +39,21 @@ public class CardController : MonoBehaviour, IPointerClickHandler
     }
     #endregion
 
-    private Action<int> OnCardClick;
-
-    public void SetSprite(Sprite content)
-    {
-        contentSprite = content;
-    }
-
     public void DeactivateMe() => gameObject.SetActive(false);
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (currentCardState != CardStates.ReadyToBeClicked)
-            return;
-        currentCardState = CardStates.Flipping;
-        StartCoroutine(Flip(contentSprite));
+        if (Linker.Instance.CardModel.OnCardClick != null)
+            Linker.Instance.CardModel.OnCardClick(Index);
+        else
+            throw new ArgumentException("On card click is empty");
     }
 
-    private IEnumerator Flip(Sprite newSpriteValue)
+    private IEnumerator Flip(Sprite newSpriteValue, float startDelay = 0)
     {
+        if (startDelay > 0)
+            yield return new WaitForSecondsRealtime(startDelay);
+
         float flipDuration = 0.5f;
         MyTransform.DORotate(new Vector3(0, 90, 0), flipDuration / 2);
         yield return new WaitForSecondsRealtime(flipDuration / 2);
@@ -66,6 +63,28 @@ public class CardController : MonoBehaviour, IPointerClickHandler
         MyTransform.DORotate(new Vector3(0, 0, 0), flipDuration / 2);
         yield return new WaitForSecondsRealtime(flipDuration / 2);
 
-        currentCardState = CardStates.DisplayTemporarily;
+        if (CurrentCardState == CardStates.FlippingToShow)
+            SetNewState(CardStates.Showing);
+        else if (CurrentCardState == CardStates.FlippingToHide)
+            SetNewState(CardStates.ReadyToBeClicked);
+    }
+
+    public void SetNewState(CardStates newState)
+    {
+        switch (newState)
+        {
+            case CardStates.FlippingToShow:
+                CurrentCardState = newState;
+                StartCoroutine(Flip(ContentSprite));
+                break;
+            case CardStates.FlippingToHide:
+                //float delayStart = CurrentCardState == CardStates.FlippingToShow ? 0.5f : 0;
+                CurrentCardState = newState;
+                StartCoroutine(Flip(coverSprite, 0.5f));
+                break;
+            default:
+                CurrentCardState = newState;
+                break;
+        }
     }
 }

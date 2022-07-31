@@ -141,6 +141,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (6)
@@ -211,6 +215,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (5)
@@ -281,6 +289,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (8)
@@ -351,6 +363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (10)
@@ -644,6 +660,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (12)
@@ -714,6 +734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (14)
@@ -830,6 +854,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (4)
@@ -1000,6 +1028,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (13)
@@ -1070,6 +1102,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (7)
@@ -1238,6 +1274,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (9)
@@ -1374,6 +1414,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (1)
@@ -1493,6 +1537,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (2)
@@ -1613,6 +1661,7 @@ GameObject:
   - component: {fileID: 1781792468}
   - component: {fileID: 1781792467}
   - component: {fileID: 1781792466}
+  - component: {fileID: 1781792471}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -1686,6 +1735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardsPoolModel: {fileID: 1781792468}
+  CardModel: {fileID: 1781792471}
   ScoreModel: {fileID: 1781792467}
   TimerModel: {fileID: 1781792466}
 --- !u!4 &1781792470
@@ -1702,6 +1752,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1781792471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781792465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6959206cfa619d8479ea1206f2f7f6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1824056148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1709,6 +1771,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (15)
@@ -1790,6 +1856,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (3)
@@ -1860,6 +1930,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card (11)
@@ -1930,6 +2004,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 528246394}
     m_Modifications:
+    - target: {fileID: 6294162053230092094, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
+      propertyPath: coverSprite
+      value: 
+      objectReference: {fileID: 7335814103526613350, guid: 84368f85d215fd743994ca23977b8e2a, type: 3}
     - target: {fileID: 7894314325571772402, guid: 3dbbb8eff1ef2fa40b8c78f8441e4e6a, type: 3}
       propertyPath: m_Name
       value: Card

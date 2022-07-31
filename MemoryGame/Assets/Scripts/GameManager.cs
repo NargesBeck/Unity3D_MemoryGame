@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public enum CardStates
 {
-    ReadyToBeClicked, Flipping, DisplayTemporarily, DisplayForGood
+    ReadyToBeClicked, FlippingToShow, FlippingToHide, Showing
 }
 
 public class GameManager : MonoBehaviour

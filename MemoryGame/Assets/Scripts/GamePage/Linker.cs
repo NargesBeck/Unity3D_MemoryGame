@@ -16,6 +16,7 @@ public class Linker : MonoBehaviour
     }
 
     public CardsPoolModel CardsPoolModel;
+    public CardModel CardModel;
     public ScoreModel ScoreModel;
     public TimerModel TimerModel;
 }

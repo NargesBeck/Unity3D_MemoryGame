@@ -16,4 +16,40 @@ MonoBehaviour:
   - LevelNumber: 1
     NumOfCards: 2
     TimeInSeconds: 20
-    CardsContents: 00000000060000000000000000000000000000000200000000000000000000000000000000000000010000000100000000000000000000000000000000000000
+    CardsContents: 0100000001000000
+  - LevelNumber: 2
+    NumOfCards: 4
+    TimeInSeconds: 15
+    CardsContents: 00000000010000000100000000000000
+  - LevelNumber: 3
+    NumOfCards: 4
+    TimeInSeconds: 12
+    CardsContents: 02000000010000000100000002000000
+  - LevelNumber: 4
+    NumOfCards: 4
+    TimeInSeconds: 10
+    CardsContents: 04000000030000000400000003000000
+  - LevelNumber: 5
+    NumOfCards: 6
+    TimeInSeconds: 30
+    CardsContents: 050000000800000009000000090000000500000008000000
+  - LevelNumber: 6
+    NumOfCards: 6
+    TimeInSeconds: 28
+    CardsContents: 0d0000000f0000000d0000000e0000000e0000000f000000
+  - LevelNumber: 7
+    NumOfCards: 6
+    TimeInSeconds: 25
+    CardsContents: 050000000200000002000000000000000000000005000000
+  - LevelNumber: 8
+    NumOfCards: 8
+    TimeInSeconds: 40
+    CardsContents: 0200000003000000010000000200000001000000000000000000000003000000
+  - LevelNumber: 9
+    NumOfCards: 8
+    TimeInSeconds: 35
+    CardsContents: 0000000004000000060000000400000005000000000000000600000005000000
+  - LevelNumber: 10
+    NumOfCards: 8
+    TimeInSeconds: 0
+    CardsContents: 080000000a00000009000000080000000b0000000a0000000b00000009000000

@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
 
     public Level CurrentLevel;
 
+    public bool PreviewingLevelToTest;
+
     private void Awake()
     {
         DontDestroyOnLoad(Instance.gameObject);

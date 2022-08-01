@@ -37,8 +37,9 @@ public class LevelsEditor : EditorWindow
 
         if (selectedLevel == null)
             return;
-
         DrawHeaderSection();
+        if (selectedLevel == null)
+            return;
         DrawCards();
         ApplyChanges();
     }
@@ -114,6 +115,11 @@ public class LevelsEditor : EditorWindow
             EditorGUILayout.EndVertical();
             GUILayout.EndArea();
             return;
+        }
+        GUI.color = Color.cyan;
+        if (selectedLevel != null && GUILayout.Button("Test Level"))
+        {
+            TestLevel();
         }
         GUI.color = Color.white;
         GUILayout.EndHorizontal();
@@ -192,6 +198,7 @@ public class LevelsEditor : EditorWindow
         float y = baseY + row * cardWidthHeight;
         return new Rect(x, y, cardWidthHeight, cardWidthHeight);
     }
+    
     private void ApplyChanges()
     {
         var data = Resources.Load<LevelsScriptableObject>("Data");
@@ -200,5 +207,14 @@ public class LevelsEditor : EditorWindow
             data.levels = levelsDB;
             EditorUtility.SetDirty(data);
         }
+    }
+    
+    private void TestLevel()
+    {
+        GameManager.Instance.CurrentLevel = selectedLevel;
+        GameManager.Instance.PreviewingLevelToTest = true;
+        if (!EditorApplication.isPlaying)
+            EditorApplication.isPlaying = true;
+        Close();
     }
 }

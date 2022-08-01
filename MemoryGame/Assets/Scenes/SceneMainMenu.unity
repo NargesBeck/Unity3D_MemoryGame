@@ -297,16 +297,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939236208}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1635525543}
-  m_RootOrder: 2
+  m_Father: {fileID: 1870539491}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 106.57}
+  m_AnchoredPosition: {x: 0, y: 6.5699844}
   m_SizeDelta: {x: 800, y: 213.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &939236210
@@ -342,7 +342,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Match The Cards!
+  m_Text: Match The Ducks!
 --- !u!222 &939236211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -561,7 +561,6 @@ RectTransform:
   m_Children:
   - {fileID: 2082163028}
   - {fileID: 1870539491}
-  - {fileID: 939236209}
   m_Father: {fileID: 1367515842}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -639,10 +638,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLevel:
-    LevelNumber: 0
-    NumOfCards: 0
-    TimeInSeconds: 0
-    CardsContents: 
+    LevelNumber: 2
+    NumOfCards: 4
+    TimeInSeconds: 10
+    CardsContents: 00000000010000000100000000000000
+  PreviewingLevelToTest: 0
 --- !u!4 &1758008459
 Transform:
   m_ObjectHideFlags: 0
@@ -698,6 +698,7 @@ GameObject:
   - component: {fileID: 1870539491}
   - component: {fileID: 1870539493}
   - component: {fileID: 1870539492}
+  - component: {fileID: 1870539494}
   m_Layer: 5
   m_Name: Title (1)
   m_TagString: Untagged
@@ -715,7 +716,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 939236209}
   m_Father: {fileID: 1635525543}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -757,7 +759,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Match The Cards!
+  m_Text: Match The Ducks!
 --- !u!222 &1870539493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -766,6 +768,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870539490}
   m_CullTransparentMesh: 1
+--- !u!95 &1870539494
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870539490}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6eeb79536fa8f74685a5ce69f755c0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2082163027
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +800,7 @@ GameObject:
   - component: {fileID: 2082163030}
   - component: {fileID: 2082163029}
   - component: {fileID: 2082163032}
+  - component: {fileID: 2082163033}
   m_Layer: 5
   m_Name: BtnPlay
   m_TagString: Untagged
@@ -912,3 +934,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5fefbbd2cd9314384e25b5a3fb53c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2082163033
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082163027}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 859c9f64077a4c04eb689863b429d157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
